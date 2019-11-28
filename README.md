@@ -1,4 +1,4 @@
-# labyrinth
+Klasse ExampleMaze
 //
 // Source code recreated from a .class file by IntelliJ IDEA
 // (powered by Fernflower decompiler)
@@ -100,3 +100,34 @@ public final class ExampleMaze implements Maze {
         }
     }
 }
+
+
+
+
+Klasse Examples
+
+
+package de.uniwue.gdp.labyrinth.examples;
+
+import de.uniwue.gdp.labyrinth.model.Maze;
+
+public class Examples {
+    private static final int EXAMPLE01_WIDTH = 13;
+    private static final String EXAMPLE01 = "##############           ## ############ # #       ## # # ##### ## #   #   # ## ### # # # ##   # # # # #### # # # # ##   #     # #### ####### ##           ##############";
+    private static final int EXAMPLE02_WIDTH = 31;
+    private static final String EXAMPLE02 = "################################                             ## ########################### ## # #             #         # ## # # ##### ### # # # ##### # ## # # #   # #   # # #     # # ## #   # # # # ### # ##### # # ## ### # # # #   #   #     # # ##   # # # # ######### ### # # #### # # # # #     #   #   # # ##   # # # # #       ### ### # #### #     # #     #   #     # ## # ####### ################# ## #                 #       # ## # ####### ####### # ##### # ## #       #       # # #     # ## ####### ####### # # # ##### ##         #       # #         ## ######### ####### ######### ##         #                   ################################";
+
+    public Examples() {
+    }
+
+    public static Maze example01() {
+        return new ExampleMaze("##############           ## ############ # #       ## # # ##### ## #   #   # ## ### # # # ##   # # # # #### # # # # ##   #     # #### ####### ##           ##############".toCharArray(), 13);
+    }
+
+    public static Maze example02() {
+        return new ExampleMaze("################################                             ## ########################### ## # #             #         # ## # # ##### ### # # # ##### # ## # # #   # #   # # #     # # ## #   # # # # ### # ##### # # ## ### # # # #   #   #     # # ##   # # # # ######### ### # # #### # # # # #     #   #   # # ##   # # # # #       ### ### # #### #     # #     #   #     # ## # ####### ################# ## #                 #       # ## # ####### ####### # ##### # ## #       #       # # #     # ## ####### ####### # # # ##### ##         #       # #         ## ######### ####### ######### ##         #                   ################################".toCharArray(), 31);
+    }
+}
+
+
+
